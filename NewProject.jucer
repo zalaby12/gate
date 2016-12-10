@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="LfEuwS" name="Gate And Key" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.GateAndKey.Gate" includeBinaryInAppConfig="1"
+              buildVST="1" buildVST3="0" buildAU="1" buildAUv3="0" buildRTAS="0"
+              buildAAX="0" pluginName="GateAndKey" pluginDesc="plugindescription"
+              pluginManufacturer="ZacHalaby" pluginManufacturerCode="Manu"
+              pluginCode="Lfeu" pluginChannelConfigs="{2,2}" pluginIsSynth="0"
+              pluginWantsMidiIn="0" pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0"
+              pluginEditorRequiresKeys="0" pluginAUExportPrefix="NewProjectAU"
+              pluginRTASCategory="" aaxIdentifier="com.yourcompany.NewProjectIdentifier"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="4.3.0">
+  <MAINGROUP id="bn2Jhq" name="Gate And Key">
+    <GROUP id="{510CD1EE-D14A-03AB-83FE-A4CD7E5CC45F}" name="Source">
+      <FILE id="mymzqm" name="PluginProcessor.cpp" compile="1" resource="1"
+            file="Source/PluginProcessor.cpp" xcodeResource="1"/>
+      <FILE id="SMkTqZ" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h" xcodeResource="0"/>
+      <FILE id="DbWgiY" name="PluginEditor.cpp" compile="1" resource="1"
+            file="Source/PluginEditor.cpp" xcodeResource="1"/>
+      <FILE id="tmsIES" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"
+            xcodeResource="0"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="0" optimisation="1" targetName="Zackey"
+                       xcodeAudioUnitBinaryLocation="Users/zacharyhalaby/Library/Audio/Plug-Ins/Components/"
+                       linkTimeOptimisation="1" binaryPath="" xcodeVstBinaryLocation="Users/zacharyhalaby/Library/Audio/Plug-Ins/VST/"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="slayer"
+                       xcodeAudioUnitBinaryLocation="Users/zacharyhalaby/Library/Audio/Plug-Ins/Components/"
+                       xcodeVstBinaryLocation="Users/zacharyhalaby/Library/Audio/Plug-Ins/VST/"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="thing1"
+                       binaryPath="/Library/Audio/Plug-In/Components/"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="thing2"
+                       binaryPath="/Library/Audio/Plug-Ins/Components/"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../Documents/projects/utilities/juces/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
